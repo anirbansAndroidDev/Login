@@ -105,7 +105,7 @@ public class LoginMainActivity extends Activity {
 			public void postData(String emailId,String passwrd) {
 				// Create a new HttpClient and Post Header
 				HttpClient httpclient = new DefaultHttpClient();
-				HttpPost httppost = new HttpPost("http://192.168.1.242:89/AndroidService.asmx/ValidateLogin");
+				HttpPost httppost = new HttpPost("http://203.153.37.13:89/AndroidService.asmx/ValidateLogin");
 
 				try {
 					// Data that I am sending
@@ -137,7 +137,7 @@ public class LoginMainActivity extends Activity {
 		//===================================================================================================================================
 		private void processResponce(String responceFromServer) 
 		{
-			//Toast.makeText(getApplicationContext(), "Do what ever with your server responce", Toast.LENGTH_LONG).show();
+			//Do what ever with your server response
 		}
 		//===================================================================================================================================
 		//processing the XML got from server
